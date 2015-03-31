@@ -1,7 +1,22 @@
+
+var x = 0;
+
 function setup() {
-  line(15, 25, 70, 90);
+  var canvas = createCanvas(600, 600);
+  canvas.parent('canvasCont');
+  background(150);
+
 }
 
 function draw() {
-  // put drawing code here
+  // ellipse(x, height/2, 20, 20);
+  // x += 1;
+}
+
+// =================================================== Sierpinski constructor
+function Sierpinski (Depth, A, B, C) {
+	this.depth = Depth;
+	this.a = A;
+	this.b = B;
+	this.c = C;
 }
